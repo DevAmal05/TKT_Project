@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-12">
+       
+        <input type="text" class="form-control" placeholder="Company">
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr >
+            <th>Id</th>
+            <th>Name</th>
+            <th>Sector</th>
+            <th>Siren</th>
+            <th>Details</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr  *ngFor="let c of companies">
+            <td>{{c.id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.sector}}</td>
+            <td>{{c.siren}}</td>
+            <td><button routerLink="/company" pButton pRipple type="button" label="Details"   (click)="edit(c.id)"  class="p-button-text"></button></td>
+            </tr>
+
+
+    </tbody>
+</table>

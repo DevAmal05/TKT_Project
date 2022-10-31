@@ -1,0 +1,15 @@
+#title{
+    color: red;
+}
+#bouton{
+    color: blue;
+    background-color: aqua;
+   
+}
+#item{
+    color: green;
+}
+.btn:active{
+    background-color: blue;
+
+}
